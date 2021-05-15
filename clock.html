@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Live Clock</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/clock.css">
+</head>
+<body>
+	<p id="abhi">Clock</p>
+	<script>
+var rt = setInterval(clocktiming, 1000);
+function clocktiming() {
+var at = new Date();
+var bt = at.toLocaleTimeString();
+document.getElementById("abhi").innerHTML = bt;
+}
+</script>
+</body>
+</html>
